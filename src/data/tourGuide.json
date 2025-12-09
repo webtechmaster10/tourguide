@@ -1,0 +1,310 @@
+{
+  "guide_metadata": {
+    "title": "Comprehensive AI-Powered Travel Guide",
+    "version": "2.1",
+    "last_updated": "2024-01-15",
+    "ai_integration_notes": "Designed for AI agent integration with hierarchical question routing"
+  },
+  
+  "ai_mappings": {
+    "interest_aliases": {
+      "mountain": ["nature_wildlife", "adventure_sports"],
+      "mountainous": ["nature_wildlife", "adventure_sports"],
+      "hike": ["adventure_sports", "nature_wildlife"],
+      "trek": ["adventure_sports", "nature_wildlife"],
+      "climb": ["adventure_sports"],
+      "beach": ["beach_relaxation"],
+      "relax": ["beach_relaxation", "wellness_spa"],
+      "food": ["food_culinary"],
+      "culture": ["cultural_historical"],
+      "history": ["cultural_historical"],
+      "nightlife": ["nightlife"],
+      "shop": ["shopping"],
+      "photo": ["photography"],
+      "wellness": ["wellness_spa"],
+      "spa": ["wellness_spa"],
+      "festival": ["festival_events"],
+      "road": ["road_trips"],
+      "trip": ["road_trips"]
+    },
+    "budget_aliases": {
+      "budget": "backpacker",
+      "cheap": "backpacker",
+      "hostel": "backpacker",
+      "mid": "mid_range",
+      "moderate": "mid_range",
+      "afford": "mid_range",
+      "luxury": "luxury",
+      "expensive": "luxury"
+    },
+    "suggested_destinations": {
+      "nature_wildlife": ["Patagonia", "Swiss Alps", "Rocky Mountains"],
+      "adventure_sports": ["New Zealand", "Nepal", "Peru"],
+      "beach_relaxation": ["Maldives", "Bali", "Phuket"]
+    },
+    "default_response_templates": {
+      "confirm_interest": "I understand you're interested in {interests}. Would you like recommendations for destinations, activities, or budgeting?",
+      "ask_more": "Can you tell me your travel dates, budget, or who you're traveling with?"
+    }
+  },
+
+  "user_profile_capture": {
+    "essential_questions": [
+      "travel_dates",
+      "travel_party_size",
+      "travel_party_type",
+      "budget_range",
+      "travel_interests",
+      "special_requirements",
+      "previous_destinations_liked"
+    ],
+    
+    "travel_party_types": [
+      "solo",
+      "couple",
+      "family_with_children",
+      "group_friends",
+      "business",
+      "honeymoon",
+      "senior_travelers"
+    ],
+    
+    "budget_categories": {
+      "backpacker": {"daily_budget": "$20-50", "characteristics": ["hostels", "street food", "public transport"]},
+      "budget": {"daily_budget": "$50-100", "characteristics": ["budget hotels", "local restaurants", "mix of transport"]},
+      "mid_range": {"daily_budget": "$100-250", "characteristics": ["3-4 star hotels", "restaurant meals", "taxis/rental cars"]},
+      "luxury": {"daily_budget": "$250+", "characteristics": ["5 star hotels", "fine dining", "private transfers"]}
+    },
+    
+    "interest_categories": [
+      "beach_relaxation",
+      "adventure_sports",
+      "cultural_historical",
+      "food_culinary",
+      "nightlife",
+      "shopping",
+      "nature_wildlife",
+      "photography",
+      "wellness_spa",
+      "religious_pilgrimage",
+      "road_trips",
+      "festival_events"
+    ]
+  },
+  
+  "pre_trip_planning": {
+    "destination_selection": {
+      "factors": [
+        "season_best_time",
+        "visa_requirements",
+        "safety_considerations",
+        "language_barrier",
+        "health_precautions",
+        "connectivity_internet"
+      ],
+      
+      "recommendation_engine": {
+        "beach_destinations": [
+          {"name": "Maldives", "best_for": ["luxury", "honeymoon", "snorkeling"], "best_time": "Nov-Apr"},
+          {"name": "Bali", "best_for": ["mid_range", "yoga", "surfing"], "best_time": "Apr-Oct"}
+        ],
+        "cultural_destinations": [
+          {"name": "Kyoto", "best_for": ["culture", "food", "photography"], "best_time": "Mar-May, Oct-Nov"},
+          {"name": "Rome", "best_for": ["history", "architecture", "food"], "best_time": "Apr-Jun, Sep-Oct"}
+        ],
+        "adventure_destinations": [
+          {"name": "New Zealand", "best_for": ["hiking", "adventure sports", "road trips"], "best_time": "Dec-Feb"},
+          {"name": "Costa Rica", "best_for": ["wildlife", "eco_tourism", "beach"], "best_time": "Dec-Apr"}
+        ]
+      }
+    },
+    
+    "booking_guidance": {
+      "flights": {
+        "best_booking_time": "6-8 weeks domestic, 3-4 months international",
+        "money_saving_tips": [
+          "Use flexible date search",
+          "Consider nearby airports",
+          "Clear browser cookies",
+          "Book on Tuesday afternoons"
+        ]
+      },
+      
+      "accommodation": {
+        "types": [
+          {"type": "hotel", "best_for": ["convenience", "amenities", "business"]},
+          {"type": "vacation_rental", "best_for": ["families", "long_stays", "cooking"]},
+          {"type": "hostel", "best_for": ["solo", "budget", "social"]},
+          {"type": "boutique_hotel", "best_for": ["experience", "design", "couples"]},
+          {"type": "resort", "best_for": ["all_inclusive", "relaxation", "amenities"]}
+        ],
+        "selection_factors": ["location", "reviews", "amenities", "cancellation_policy"]
+      }
+    },
+    
+    "preparation_checklists": {
+      "documents": ["passport", "visas", "travel_insurance", "driver_license", "vaccination_certificates"],
+      "health": ["prescription_medications", "first_aid", "mosquito_repellent", "sunscreen"],
+      "financial": ["multiple_payment_methods", "notify_bank", "local_currency", "money_belt"],
+      "electronics": ["adapters", "power_bank", "portable_wifi", "camera"],
+      "packing": ["weather_appropriate_clothing", "comfortable_shoes", "day_pack", "reusable_water_bottle"]
+    }
+  },
+  
+  "destination_information": {
+    "structure": {
+      "overview": ["brief_description", "time_zone", "currency", "languages", "emergency_numbers"],
+      "getting_around": {
+        "public_transport": ["metro", "buses", "trains"],
+        "private_transport": ["taxis", "ride_sharing", "car_rental"],
+        "tips": ["local_apps", "scams_to_avoid", "best_passes"]
+      },
+      "neighborhoods": [
+        {
+          "name": "City_Center",
+          "character": ["historic", "touristy", "walkable"],
+          "best_for": ["first_time", "sightseeing", "dining"],
+          "avoid_if": ["budget", "quiet", "local_experience"]
+        }
+      ]
+    },
+    
+    "attractions": {
+      "categories": [
+        {"category": "landmarks", "examples": ["Eiffel Tower", "Taj Mahal"]},
+        {"category": "museums_galleries", "examples": ["Louvre", "MET"]},
+        {"category": "parks_nature", "examples": ["Central Park", "Fiordland"]},
+        {"category": "local_experiences", "examples": ["cooking_class", "market_visit"]}
+      ],
+      
+      "ticketing_advice": {
+        "skip_the_line": ["recommended_for", "where_to_book", "price_premium"],
+        "city_passes": ["included_attractions", "cost_analysis", "where_to_buy"],
+        "free_attractions": ["free_days", "free_hours", "always_free"]
+      }
+    },
+    
+    "food_drink": {
+      "cuisine_overview": ["signature_dishes", "must_try_foods", "dining_etiquette"],
+      "meal_timing": ["breakfast_time", "lunch_time", "dinner_time"],
+      "budget_options": ["street_food", "local_markets", "lunch_specials"],
+      "dining_areas": ["touristy_zones", "local_zones", "hidden_gems"],
+      "tipping_culture": ["percentage", "when_not_to_tip", "service_charge_included"]
+    },
+    
+    "safety_health": {
+      "emergency": ["numbers", "hospitals", "pharmacies"],
+      "areas_to_avoid": ["times", "locations", "specific_scams"],
+      "health_precautions": ["tap_water", "food_safety", "sun_protection"],
+      "cultural_sensitivities": ["dress_codes", "photography_rules", "greeting_customs"]
+    }
+  },
+  
+  "day_planning": {
+    "itinerary_templates": {
+      "1_day": ["morning_highlight", "afternoon_exploration", "evening_experience"],
+      "3_day": ["day1_historical", "day2_cultural", "day3_local"],
+      "7_day": ["days1-2_city", "days3-4_excursions", "days5-7_relaxation"]
+    },
+    
+    "daily_agendas": [
+      {
+        "type": "cultural_day",
+        "morning": "museum_or_historical_site",
+        "afternoon": "local_neighborhood_exploration",
+        "evening": "traditional_performance"
+      },
+      {
+        "type": "nature_day",
+        "morning": "hike_or_nature_reserve",
+        "afternoon": "picnic_or_wildlife_watching",
+        "evening": "stargazing_or_campfire"
+      }
+    ]
+  },
+  
+  "budget_management": {
+    "cost_categories": {
+      "accommodation": {"percentage": 30, "saving_tips": ["book_direct", "last_minute", "longer_stays"]},
+      "food": {"percentage": 25, "saving_tips": ["lunch_specials", "street_food", "self_catering"]},
+      "activities": {"percentage": 20, "saving_tips": ["free_walking_tours", "city_passes", "advance_booking"]},
+      "transport": {"percentage": 15, "saving_tips": ["public_transport", "walking", "ride_sharing_pools"]},
+      "shopping": {"percentage": 10, "saving_tips": ["local_markets", "avoid_tourist_zones", "negotiate"]}
+    },
+    
+    "money_saving_strategies": [
+      "travel_off_season",
+      "use_local_transport",
+      "eat_where_locals_eat",
+      "free_walking_tours",
+      "student_senior_discounts"
+    ]
+  },
+  
+  "special_requirements": {
+    "accessibility": {
+      "wheelchair_access": ["attractions", "transport", "accommodation"],
+      "resources": ["local_organizations", "rental_equipment", "accessible_tours"]
+    },
+    
+    "family_travel": {
+      "child_friendly": ["attractions", "restaurants", "accommodation"],
+      "essentials": ["stroller_access", "baby_changing", "kid_menus"]
+    },
+    
+    "pet_travel": {
+      "pet_friendly": ["accommodation", "transport", "parks"],
+      "requirements": ["vaccination_docs", "quarantine_rules", "airline_policies"]
+    },
+    
+    "dietary_restrictions": {
+      "vegetarian_vegan": ["restaurant_guides", "local_dishes", "translation_cards"],
+      "allergies": ["ingredient_translations", "emergency_phrases", "hospital_info"]
+    }
+  },
+  
+  "post_trip": {
+    "sharing": ["photo_organization", "social_media_tips", "travel_blog_ideas"],
+    "feedback": ["review_platforms", "helpful_review_elements", "photo_uploads"],
+    "memories": ["photo_book_services", "local_artisan_souvenirs", "recipe_recreation"]
+  },
+  
+  "ai_agent_integration": {
+    "question_routing": {
+      "destination_questions": ["where", "best_time", "weather", "safety"],
+      "planning_questions": ["how", "itinerary", "booking", "packing"],
+      "logistical_questions": ["transport", "accommodation", "cost", "visa"],
+      "experience_questions": ["food", "attractions", "hidden_gems", "cultural"],
+      "emergency_questions": ["help", "lost", "medical", "police"]
+    },
+    
+    "response_templates": {
+      "comparison": "Based on your interests in [user_interests], I recommend [Option_A] for [reason_1] and [reason_2], while [Option_B] is better for [alternative_priority].",
+      "recommendation": "For [user_profile] traveling during [dates], the top 3 recommendations are: 1) [Rec1] because [reason], 2) [Rec2] because [reason], 3) [Rec3] because [reason].",
+      "itinerary": "Here's a [duration]-day itinerary for [destination]: Day 1: [Morning activity] + [Afternoon activity] + [Evening activity]. Day 2: ...",
+      "cost_estimate": "For [travel_party] for [duration] in [destination] with [budget_level] preferences, estimated costs: Accommodation: $X, Food: $Y, Activities: $Z.",
+      "how_to": "To [accomplish_task] in [destination]: Step 1: [Action], Step 2: [Action], Pro tip: [Expert_advice]."
+    },
+    
+    "follow_up_questions": {
+      "after_destination_rec": ["What's your budget?", "Any special interests?", "Traveling with children?"],
+      "after_itinerary": ["Need restaurant recommendations?", "Want to book tickets?", "Need transport options?"],
+      "after_booking": ["Need packing list?", "Want local phrases?", "Need airport transfer?"]
+    }
+  },
+  
+  "real_time_information_sources": {
+    "weather": ["accuweather", "weather.com", "local_met_service"],
+    "transport": ["google_maps", "city_mapper", "local_transit_apps"],
+    "currency": ["xe.com", "oanda", "local_bank_rates"],
+    "events": ["timeout", "local_tourism_sites", "eventbrite"],
+    "safety": ["government_travel_advisories", "local_news", "travel_forums"]
+  },
+  
+  "local_insights": {
+    "phrases": ["hello", "thank you", "help", "how much", "where is"],
+    "etiquette": ["greeting_customs", "dining_rules", "bargaining_tips", "photography_etiquette"],
+    "festivals": ["major_annual_events", "local_celebrations", "best_festivals_for_tourists"],
+    "hidden_gems": ["local_favorite_restaurants", "quiet_spots", "underrated_attractions"]
+  }
+}

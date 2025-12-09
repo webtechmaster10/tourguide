@@ -1,0 +1,108 @@
+.services-container {
+  width: 100%;
+}
+
+.services-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-hero p {
+  font-size: 1.2rem;
+}
+
+.services-grid {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  border-top: 4px solid #667eea;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(102, 126, 234, 0.3);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.service-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.services-cta {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px;
+}
+
+.services-cta h2 {
+  margin-bottom: 1rem;
+}
+
+.services-cta p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.cta-link {
+  display: inline-block;
+  background: white;
+  color: #667eea;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .services-hero h1 {
+    font-size: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-cta {
+    margin: 2rem auto;
+  }
+}
